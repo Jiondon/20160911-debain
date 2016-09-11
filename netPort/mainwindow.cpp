@@ -19,6 +19,8 @@ MainWindow::MainWindow(QWidget *parent)
     m_pProcess->start(program, arguments);
     m_arrayResult = m_pProcess->readAll();
     qDebug()<<"get sar  result::: "<<m_arrayResult;
+
+    //显示网络信息
     m_pLabel = new QLabel(this);
     m_pLabel->resize(300,100);
 }
